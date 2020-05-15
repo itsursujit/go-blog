@@ -1,7 +1,7 @@
 package service
 
 import (
-	"blog/model"
+	"blog/app/model"
 	"fmt"
 	"xorm.io/xorm"
 )
@@ -10,9 +10,9 @@ type UserService struct {
 	Engine *xorm.Engine
 }
 
-func(u *UserService)AddUser(data model.User){
+func (u *UserService) AddUser(data model.User) {
 	//插入数据
-	res,err := u.Engine.Insert(data)
+	res, err := u.Engine.Insert(data)
 	if err != nil {
 		panic(err)
 	}

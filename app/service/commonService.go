@@ -1,8 +1,8 @@
 package service
 
-import "blog/util/engine"
+import "blog/app/util/engine"
 
-func NewUserService()*UserService{
+func NewUserService() *UserService {
 	user := new(UserService)
 	user.Engine = engine.NewEngine()
 	return user

@@ -1,7 +1,7 @@
 package middleware
 
 import (
-	"blog/config"
+	"blog/app/config"
 	"github.com/iris-contrib/middleware/jwt"
 )
 
