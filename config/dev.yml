@@ -1,0 +1,12 @@
+server:
+  log_level: "debug"
+  port: ":8080"
+  jwt_signature_key: "Ren_Blog_Key_Signature"
+mysql:
+  host: "127.0.0.1"
+  port: "3306"
+  user: "root"
+  password: "root"
+  charset: "utf8"
+  db_name: "blog"
+  db_params: "parseTime=true&loc=Local"
